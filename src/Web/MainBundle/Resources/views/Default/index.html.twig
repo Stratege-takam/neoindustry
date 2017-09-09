@@ -1,1 +1,89 @@
-Hello World!
+{% extends 'MainBundle::layout.html.twig' %}
+
+{% block meta %}
+    <meta name = "{% trans from 'home' %} refer.title {% endtrans %}" >
+    <meta name = "keywords" content = "{% trans from 'home' %} refer.description {% endtrans %}" >
+{% endblock %}
+
+{% block title %}
+    {% trans from 'home' %} title {% endtrans %}
+{% endblock  %}
+
+{% block mycss %}
+    {{ parent() }}
+{% endblock %}
+
+{% block header %}
+    {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
+{% endblock %}
+
+{% block mainLg %}
+   <div class="" id="mainHome">
+       <div class="parallax img1">
+           <div id="mainBlock1" class="text-center">
+               {% include 'MainBundle:Inc:head.html.twig' %}
+               <div class="row align-items-center mainBlock1" >
+                   <div class="col-12 " >
+                       <img src="{{ asset('dist/Neoindustry_logo_01.png') }}" alt="">
+                       <h1 class="small"> NEO  INDUSTRY  S.A</h1>
+                       <span class="cacao small-text"> Leader dans la transformation du  cacao</span>
+
+                       <div class="down">
+                           <a class="fa fa-angle-down text-white" href="#mainBlock2"></a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       <div class="parallax img2">
+           <div id="mainBlock2" class="text-center">
+               <div class="row align-items-center mainBlock2" >
+                   <div class="col-12 container" >
+                       <br><br>
+                        <h1>
+                            IMAGINE A WORLD <br>
+                            WITHOUT COFFEE
+                        </h1>
+                       <div class="row content">
+                           <div class="col-sm-12 col-md-6 small-to-text">
+                              there's probably nothing  worse than  wakinh  up  on   Monday  moning  to
+                              there's probably nothing  worse than  wakinh  up  on   Monday  moning  to
+                              there's probably nothing  worse than  wakinh  up  on   Monday  moning  to
+                              there's probably nothing  worse than  wakinh  up  on   Monday  moning  to
+                              there's probably nothing  worse than  wakinh  up  on   Monday  moning  to
+                              there's probably nothing  worse than  wakinh  up  on   Monday  moning  to
+                              there's probably nothing  worse than  wakinh  up  on   Monday  moning  to
+                           </div>
+                           <div class="col-sm-12 col-md-6  small-to-text">
+                               there's probably nothing  worse than  wakinh  up  on   Monday  moning  to
+                               there's probably nothing  worse than  wakinh  up  on   Monday  moning  to
+                               there's probably nothing  worse than  wakinh  up  on   Monday  moning  to
+                               there's probably nothing  worse than  wakinh  up  on   Monday  moning  to
+                               there's probably nothing  worse than  wakinh  up  on   Monday  moning  to
+                               there's probably nothing  worse than  wakinh  up  on   Monday  moning  to
+                               there's probably nothing  worse than  wakinh  up  on   Monday  moning  to
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+
+       <div class="parallax img3">
+           <div id="mainBlock3" class="text-center">
+               <div class="row align-items-center mainBlock3" >
+                   <div class="col-12 " >
+
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+{% endblock %}
+
+{% block myjs %}
+    {# mettre des liens vers des pages externe js si c'est  necessaire #}
+{% endblock %}
+
