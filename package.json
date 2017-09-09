@@ -1,7 +1,7 @@
 {
-  "name": "lacavedubonvin",
+  "name": "neoindustrysa",
   "version": "1.0.0",
-  "description": "Website of sale of wines ",
+  "description": "Presentation de l'entreprise et  de ses produits",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1",
@@ -23,6 +23,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "<Sdanicktakam@yahoo.fr>",
-  "license": "lacavedubonvin"
+  "author": "<Sdanicktakam@yahoo.fr>,<yarnoghislain@yahoo.fr>",
+  "license": "neoindustry"
 }
