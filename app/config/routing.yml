@@ -1,3 +1,4 @@
+
 entity:
     resource: "@EntityBundle/Controller/"
     type:     annotation
@@ -11,3 +12,10 @@ admin:
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+
+main:
+    resource: "@MainBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+
