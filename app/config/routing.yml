@@ -1,5 +1,21 @@
+
+entity:
+    resource: "@EntityBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+admin:
+    resource: "@AdminBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
 main:
     resource: "@MainBundle/Controller/"
     type:     annotation
     prefix:   /
+
 
