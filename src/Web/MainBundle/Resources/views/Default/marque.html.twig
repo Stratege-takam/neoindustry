@@ -1,0 +1,78 @@
+{% extends 'MainBundle::layout.html.twig' %}
+
+{% block meta %}
+    <meta name = "{% trans from 'index' %} refer.title {% endtrans %}" >
+    <meta name = "keywords" content = "{% trans from 'index' %} refer.description {% endtrans %}" >
+{% endblock %}
+
+{% block title %}
+    {% trans from 'index' %} title {% endtrans %}
+{% endblock  %}
+
+{% block mycss %}
+    {{ parent() }}
+{% endblock %}
+
+
+{% block mainLg %}
+    <div class="text-center" id="mainMedia">
+       <div id="mainblock1">
+           <video  autoplay loop muted   poster="{{ asset('dist/slide/slide5.png') }}" id="Mainvideo">
+               <source src="{{ asset('dist/video/first.mp4') }}" type="video/mp4">
+           </video>
+       </div>
+        <div class="card-deck container"  id="mainblock2">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <iframe  src="https://www.youtube.com/embed/1Raurv9rFjY" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <iframe frameborder="0" src="https://www.youtube.com/embed/QzP8bHhCsg8" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <iframe src="https://www.youtube.com/embed/K9DvDrnBHtc" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <iframe src="https://www.youtube.com/embed/pyN3pUQblek" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <iframe  src="https://www.youtube.com/embed/QzP8bHhCsg8" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <iframe  src="https://www.youtube.com/embed/oaNPL4HJIYs"  frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block myjs %}
+    {# mettre des liens vers des pages externe js si c'est  necessaire #}
+{% endblock %}
+
