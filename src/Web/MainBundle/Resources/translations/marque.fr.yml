@@ -4,3 +4,35 @@ refer:
   content: Liste  des Marque de Neo Industry s.a
 block1: |
  PRODUITS ISSUES DE LA TRANSFORMATION <br/> DU  CACAO DANS NOS USINES
+prod1:
+  title: titre1
+  description: |
+   je suis une simple description 1
+prod2:
+  title: titre2
+  description: |
+   description 2
+prod3:
+  title: titre3
+  description: |
+   description 3
+prod4:
+  title: titre4
+  description: |
+   description 4
+prod5:
+  title: titre5
+  description: |
+   description 5
+prod6:
+  title: titre6
+  description: |
+   description 6
+prod7:
+  title: titre7
+  description: |
+   description 7
+prod8:
+  title: titre8
+  description: |
+   description 8
