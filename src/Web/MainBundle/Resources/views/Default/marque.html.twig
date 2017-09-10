@@ -1,12 +1,12 @@
 {% extends 'MainBundle::layout.html.twig' %}
 
 {% block meta %}
-    <meta name = "{% trans from 'index' %} refer.title {% endtrans %}" >
-    <meta name = "keywords" content = "{% trans from 'index' %} refer.description {% endtrans %}" >
+    <meta name = "{% trans from 'marque' %} refer.title {% endtrans %}" >
+    <meta name = "keywords" content = "{% trans from 'marque' %} refer.description {% endtrans %}" >
 {% endblock %}
 
 {% block title %}
-    {% trans from 'index' %} title {% endtrans %}
+    {% trans from 'marque' %} title {% endtrans %}
 {% endblock  %}
 
 {% block mycss %}
@@ -15,61 +15,117 @@
 
 
 {% block mainLg %}
-    <div class="text-center" id="mainMedia">
-       <div id="mainblock1">
-           <video  autoplay loop muted   poster="{{ asset('dist/slide/slide5.png') }}" id="Mainvideo">
-               <source src="{{ asset('dist/video/first.mp4') }}" type="video/mp4">
-           </video>
-       </div>
-        <div class="card-deck container"  id="mainblock2">
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <div class="card">
-                        <div class="card-block">
-                            <iframe  src="https://www.youtube.com/embed/1Raurv9rFjY" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="card">
-                        <div class="card-block">
-                            <iframe frameborder="0" src="https://www.youtube.com/embed/QzP8bHhCsg8" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="card">
-                        <div class="card-block">
-                            <iframe src="https://www.youtube.com/embed/K9DvDrnBHtc" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="card">
-                        <div class="card-block">
-                            <iframe src="https://www.youtube.com/embed/pyN3pUQblek" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="card">
-                        <div class="card-block">
-                            <iframe  src="https://www.youtube.com/embed/QzP8bHhCsg8" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="card">
-                        <div class="card-block">
-                            <iframe  src="https://www.youtube.com/embed/oaNPL4HJIYs"  frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
+    <div class="text-center" id="mainMarque">
+        <div id="mainBlock1" style="background: url({{ asset('dist/marque/nav.png') }}) no-repeat; ">
+            <div class="row align-items-center mainBlock1" >
+                <div class="col-12 " >
+                    <h1 class="">  {% trans from  'marque' %} block1 {% endtrans %}</h1>
                 </div>
             </div>
         </div>
+        <div id="mainBlock2">
+           <div class="container">
+               <div class="row">
+                   <div class="col-lg-3 col-md-4 col-sm-12">
+                       <div class="cards">
+                           <div class="card-blocks " style="background: url({{ asset('dist/marque/prod1.png') }}) no-repeat; ">
+                              <div class="row align-items-center hover-desc ">
+                                  <div class="col-12 ">
+                                      <h2>{% trans from  'marque' %} prod1.title {% endtrans %}</h2>
+                                      <span> prod1.description </span>
+                                  </div>
+                              </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-4 col-sm-12">
+                       <div class="cards">
+                           <div class="card-blocks " style="background: url({{ asset('dist/marque/prod2.png') }}) no-repeat; ">
+                               <div class="row align-items-center hover-desc ">
+                                   <div class="col-12 ">
+                                       <h2>{% trans from  'marque' %} prod2.title {% endtrans %}</h2>
+                                       <span> prod2.description </span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-4 col-sm-12">
+                       <div class="cards">
+                           <div class="card-blocks " style="background: url({{ asset('dist/marque/prod3.png') }}) no-repeat; ">
+                               <div class="row align-items-center hover-desc ">
+                                   <div class="col-12 ">
+                                       <h2>{% trans from  'marque' %} prod3.title {% endtrans %}</h2>
+                                       <span> prod3.description </span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-4 col-sm-12">
+                       <div class="cards">
+                           <div class="card-blocks " style="background: url({{ asset('dist/marque/prod4.png') }}) no-repeat; ">
+                               <div class="row align-items-center hover-desc ">
+                                   <div class="col-12 ">
+                                       <h2>{% trans from  'marque' %} prod4.title {% endtrans %}</h2>
+                                       <span> prod4.description </span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div> <div class="col-lg-3 col-md-4 col-sm-12">
+                       <div class="cards">
+                           <div class="card-blocks " style="background: url({{ asset('dist/marque/prod5.png') }}) no-repeat; ">
+                               <div class="row align-items-center hover-desc ">
+                                   <div class="col-12 ">
+                                       <h2>{% trans from  'marque' %} prod5.title {% endtrans %}</h2>
+                                       <span> prod5.description </span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-4 col-sm-12">
+                       <div class="cards">
+                           <div class="card-blocks " style="background: url({{ asset('dist/marque/prod6.png') }}) no-repeat; ">
+                               <div class="row align-items-center hover-desc ">
+                                   <div class="col-12 ">
+                                       <h2>{% trans from  'marque' %} prod6.title {% endtrans %}</h2>
+                                       <span> prod6.description </span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-4 col-sm-12">
+                       <div class="cards">
+                           <div class="card-blocks " style="background: url({{ asset('dist/marque/prod7.png') }}) no-repeat; ">
+                               <div class="row align-items-center hover-desc ">
+                                   <div class="col-12 ">
+                                       <h2>{% trans from  'marque' %} prod7.title {% endtrans %}</h2>
+                                       <span> prod7.description </span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-4 col-sm-12">
+                       <div class="cards">
+                           <div class="card-blocks " style="background: url({{ asset('dist/marque/prod8.png') }}) no-repeat; ">
+                               <div class="row align-items-center hover-desc ">
+                                   <div class="col-12 ">
+                                       <h2>{% trans from  'marque' %} prod8.title {% endtrans %}</h2>
+                                       <span> prod8.description </span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+           </div>
+        </div>
     </div>
-
-
 {% endblock %}
 
 {% block myjs %}

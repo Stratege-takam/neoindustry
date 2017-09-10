@@ -1,0 +1,48 @@
+#mainMarque{
+  width: 100%;
+  height: 100%;
+
+  #mainBlock1{
+    font-size:36px;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    .mainBlock1{
+      background-color: rgba(0,0,0,0.6);
+      height: 100%;
+      min-height: 414px;
+      font-weight: bold;
+      color: white;
+    }
+  }
+
+  #mainBlock2{
+    margin-top: 2em;
+    .cards{
+      width: 100%;
+       margin-bottom: 2em;
+      .card-blocks{
+        padding: 0px;
+        height: 270px;
+        .hover-desc{
+          color: transparent;
+          height: 0px;
+          width: 100%;
+          margin-left: 0%;
+        }
+      }
+      .card-blocks:hover{
+        .hover-desc{
+          color: white;
+          background-color: rgba(0,0,0,0.6);
+          transition-property: all;
+          transition-duration: .5s;
+          transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+          height: 100%;
+        }
+      }
+
+    }
+  }
+
+}
