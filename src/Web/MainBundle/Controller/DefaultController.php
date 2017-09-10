@@ -14,4 +14,20 @@ class DefaultController extends Controller
     {
         return $this->render('MainBundle:Default:index.html.twig');
     }
+
+    /**
+     * @Route("/media", name="main_media")
+     */
+    public function mediaAction()
+    {
+        return $this->render('MainBundle:Default:media.html.twig');
+    }
+
+    /**
+     * @Route("/marque", name="main_marque")
+     */
+    public function marqueAction()
+    {
+        return $this->render('MainBundle:Default:marque.html.twig');
+    }
 }
